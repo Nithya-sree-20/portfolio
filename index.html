@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equive="X-UA-compatible" content="IE-edge">
         <meta name="viewport" content="width-device-width,initial-scale-1.0">
         <title>personal portfolio website</title>
         <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous">
     </head>
     <body id="header">      
         <header>
@@ -14,8 +15,9 @@
             <nav id="text"><ul>
                 <li><a href="#head">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#">portfolio</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="certificate.html">Certificates</a></li>
+                <li><a href="C:\Users\nithy\Downloads\Nithyasree 511321205020.pdf">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
@@ -30,6 +32,14 @@
             <h1>Hi,I'm <span>Nithya</span><br>sree From India</br></h1>
           </div>
        </div>
+       <!--projects-->
+       <div class="project-container">
+        <!-- Your project content goes here -->
+        <p>This is the project container.</p>
+    </div>
+</div>
+
+</div>
 <div id="about">
     <div class="container">
     <div class="row">
@@ -65,8 +75,9 @@
                 </div>
              
                 <div class="tab-contents active-tab" id="experience">
-                    <p>I am a fresher so till now there is no any work experience </p>
-                </div>
+                    <p>During my 3rd year I completed  an online internship and build some projects
+                        Currently  working as an intern in Focus Logic</p>
+                </div> 
                 <div class="tab-contents"id="education">
                     <ul>
                         <li>
@@ -81,7 +92,10 @@
         </div>
     </div>
 </div>
-<div id="services">
+<!-- <section class="section" id="projects">
+    <div class="top-header">
+       
+    </div> --><div id="services">
         <div style="padding-left: 450px;"><h1 class="sub-title">My services</h1></div>
         <div class="container">
         <div class="services-list">
@@ -114,6 +128,7 @@
         </div>
     </div>
 </div>
+
 <div id="contact">
     <div class="container">
         <div class="row">
@@ -122,6 +137,7 @@
                     Contact Me
                 </h1>
                 <p><i class="fa fa-envelope"></i>@nithya04088gmail.com</p>
+                <p><i class="fa fa-phone"></i>91+ 6369944610</p>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/nithya-sree-g-04b908256/"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/nithya-sree-20"><i class=" fab fa-github"></i></a>
@@ -141,9 +157,10 @@
         </div>
     </div>
 </div>
+
 <script>
-    var tablinks =document.getElementsByClassName("tab-links");
-    var tabcontents =document.getElementsByClassName("tab-contents");
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
     function opentab(tabname){
         for(tablink of tablinks){
             tablink.classList.remove("active-link");
@@ -153,9 +170,9 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-
     }
+    
 </script>
-    </body>
+</body>
 </html>
 
