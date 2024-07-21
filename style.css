@@ -307,10 +307,11 @@ nav .fas{
     --button-bg-color: #ff004f; /* Default button background */
     --button-text-color: #000000; /* Default button text color */
     --service-bg-color: #262626; /* Default service background */
+    
 }
 
 .light-theme {
-    --background-color: #fffefe;
+    --background-color: hwb(0 100% 0%);
     --text-color: #080808;
     --nav-bg-color: #ffffff; /* Nav background for light theme */
     --nav-text-color: #000000; /* Nav text color for light theme */
@@ -319,6 +320,8 @@ nav .fas{
     --button-text-color: #ffffff; /* Button text color for light theme */
     --service-bg-color: hwb(0 38% 60%); /* Service background for light theme */
     --form-bg-color: hwb(0 38% 60%);
+    --para-color:#080808;
+    --contact-right-background:hwb(0 38% 60%);
 }
 
 body {
@@ -355,7 +358,13 @@ nav ul li a:hover::after {
     border-radius: 20px;
     cursor: pointer;
 }
-
+.para{
+    color:var(--para-color);
+}
+.contact-right form input textarea{
+    background: var(--contact-right-background);
+    color:var(--contact-right-background);
+}
 .services-list div {
     background-color: var(--service-bg-color);
     padding: 40px;
@@ -379,16 +388,18 @@ nav ul li a:hover::after {
 }
 .toggle-btn{
     position: relative;
-    left:30px;
+    left:20px;
     margin:35px;
-
 }
 .header-text{
-   margin-top: 100%;
+   margin-top:20%;
    font-size: 16px;
    position: relative;
-   right:200px;
+   right:1px;
+   margin-left:55px;
+   display: inline;
 }
+
 .header-text h1{
     font-size: 30px;
 }
